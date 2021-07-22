@@ -1,2 +1,10 @@
-# final
-J124 Final Project
+# Final Project
+California Kindergarten Immunization Records
+
+### Story Summary and Sourcing
+
+
+### Data Visualization 
+
+
+### Data Analysis Process
