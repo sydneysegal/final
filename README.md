@@ -48,7 +48,7 @@
 1. Use pertusisRates2010_2015.csv in Google Sheets
 2. 
 
-### How did the total number of students with vaccine exemptions change over time, from 2000 to 2015? Personal medical exemptions vs. belief exemptions?
+### How did the total number of students with vaccine exemptions change over time, from 2000 to 2015? Personal belief exemptions?
 1. Use StudentData.csv in Google Sheets
 2. 
 
@@ -68,18 +68,22 @@
 13. Divide E3 by B3 for the percent of kindergartners with exemptions in public schools (=E3/B3, then press enter)
 14. The percentages come out as decimals first, so click on "F" to select the whole column and select "Format as %" in the tool bar
 15. **_ANSWER PART 1: 3.23% of total private school kindergartners were exempt from vaccinations from the 2000 to 2015 school years; 1.81% of total public school kindergartners were exempt from vaccinations_**
-16. ...
-17. **_ANSWER PART 2: _**
-18. (photo here)
+16. new column "percent belief"
+17. ...
+18. **_ANSWER PART 2: _**
+19. (screenshot of all parts here)
 
-### List the 5 counties (of the schools) with the highest exemption rates from 2000 to 2015.
+
+### List the 5 counties (of the schools) with the highest personal belief exemption rates during the 2015 school year.
 1. Use StudentData.csv in Google Sheets
-2. right click column K and insert 1 column left (becomes the new column K), titled "exemption sum"
-3. formula: =SUM($I$2,$J$2), then double click the square in the bottom of the cell so that it copies the formula down the length of the column
-4. right click column K ("exemption sum") and insert a column right (column L), titled "exemption rate" 
-5. formula: =$K$2/$E$2, column E being "n"
-6. Double click the square in the bottom of the cell so that it copies the formula down the length of the column
-7. rates come out as decimals, must click the column letter (L) to highlight the whole column, then “format as %” in the row of tools above the sheet
-8. click the down arrow next to the column letter (still L), select "sort sheet Z-->A"
-9. **_ANSWER: Napa (100% at Kolbe Academy in 2012), Riverside (100% at Applied Scholastics Online Academy in 2013), Alameda (100% at Muhammad University O in 2003 and 2004), Marin (100% at North Bay Christian Academy in 2001), Santa Cruz (97.22% at Santa Cruz Waldorf in 2010)_**
-10. Important to note that the schools are different sizes... again, some religious...
+
+*need to redo steps starting here*
+3. right click column K and insert 1 column left (becomes the new column K), titled "exemption sum"
+4. formula: =SUM($I$2,$J$2), then double click the square in the bottom of the cell so that it copies the formula down the length of the column
+5. right click column K ("exemption sum") and insert a column right (column L), titled "exemption rate" 
+6. formula: =$K$2/$E$2, column E being "n"
+7. Double click the square in the bottom of the cell so that it copies the formula down the length of the column
+8. rates come out as decimals, must click the column letter (L) to highlight the whole column, then “format as %” in the row of tools above the sheet
+9. click the down arrow next to the column letter (still L), select "sort sheet Z-->A"
+10. **_ANSWER: Napa (100% at Kolbe Academy in 2012), Riverside (100% at Applied Scholastics Online Academy in 2013), Alameda (100% at Muhammad University O in 2003 and 2004), Marin (100% at North Bay Christian Academy in 2001), Santa Cruz (97.22% at Santa Cruz Waldorf in 2010)_**
+11. Important to note that the schools are different sizes... again, some religious...
