@@ -14,19 +14,22 @@
 1. Use StudentData.csv in Google Sheets
 2. Click in the upper left corner of the sheet, go to the "Data" tab, click "Pivot table," then click "CREATE" to create a pivot table from the *entire* data set
 3. Add "year" to the "Rows" section of the pivot table settings and select "ascending order"
-4. Add "nMMR," "nPolio," and "nDTP" to the "Values" section of the pivot table settings, making sure that they are summarizing by "SUM"
+4. Add "nMMR," "nPolio," and "nDTP" to the "Values" section of the pivot table settings, making sure that they are being summarized by "SUM"
 5. Add "year" to the "Filters" section of the pivot table settings and select just 2014 and 2015
-6. Highlight B2:C3, change format to "number" then move the decimal point to the left twice
+6. Highlight B2:C3, change format to "number" 
 7. (insert photo here)
 8. ANSWER:
 
-### How many California kindergartners were fully vaccinated in MMR, Polio, and DTP in 2000 versus 2015?
+### What percentage of California kindergartners were fully vaccinated in MMR, Polio, and DTP in 2000 versus 2015? How did this number change over time?
 1. Use StudentData.csv in Google Sheets
 2. Click in the upper left corner of the sheet, go to the "Data" tab, click "Pivot table," then click "CREATE" to create a pivot table from the *entire* data set
-3. 
-
-### How did the total number of fully vaccinated Kindergarten students change over time, from 2000 to 2015?
-1. Use StudentData.csv in Google Sheets
+3. Add "year" to the "Rows" section of the pivot table settings and select "ascending order"
+4. 4. Add "n," "nMMR," "nDTP," and "nPolio" to the "Values" section of the pivot table settings, making sure that they are being summarized by "SUM"
+5. Add "year" to the "Filters" section of the pivot table settings and select just 2000 and 2015
+6. copy numbers into new sheet
+7. freeze, bold headings
+8. change number format
+9. look for the lowest sum in each row (that is how many are vaccinated in everything?)
 
 ### Which California county had the most Pertussis cases in 2014?
 1. Use InfantData.csv in Google Sheets
@@ -67,10 +70,10 @@
 9. **_ANSWER: Napa (100% at Kolbe Academy in 2012), Riverside (100% at Applied Scholastics Online Academy in 2013), Alameda (100% at Muhammad University O in 2003 and 2004), Marin (100% at North Bay Christian Academy in 2001), Santa Cruz (97.22% at Santa Cruz Waldorf in 2010)_**
 10. Important to note that the schools are different sizes... some religious...
 
-### List the 3 counties (of the schools) with the lowest MMR vaccination rates from 2000 to 2015.
+### List the 3 counties (of the schools) with the lowest DTP vaccination rates in 2014.
 1. Use StudentData.csv in Google Sheets
 
-### Which years had the lowest average vaccination rates for each vaccine? Highest exemption rates?
+### Which years had the lowest average vaccination rates for each vaccine?
 1. Use StudentData.csv in Google Sheets
 
 ### How did the total number of students with vaccine exemptions change over time, from 2000 to 2015? Personal medical exemptions vs. belief exemptions?
