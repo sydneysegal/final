@@ -8,7 +8,7 @@
 
 ## Data Analysis Process
 
-#### First, I downloaded the "StudentData.csv," "InfantData.csv" and "pertusisRates2010_2015.csv" files from [Kaggle](https://www.kaggle.com/broach/california-kindergarten-immunization-rates/version/5?select=StudentData.csv) and uploaded them to Google Sheets. Each question below outlines the steps I took to answer it, with the data set being used marked in step #1 every time. Before beginning the questions, I made sure to "freeze" the top row of columns ("View" tab, then "Freeze," then "1 row").
+*First, I downloaded the "StudentData.csv," "InfantData.csv" and "pertusisRates2010_2015.csv" files from [Kaggle](https://www.kaggle.com/broach/california-kindergarten-immunization-rates/version/5?select=StudentData.csv) and uploaded them to Google Sheets. Each question below outlines the steps I took to answer it, with the data set being used marked in step #1 every time. Before beginning the questions, I made sure to "freeze" the top row of columns ("View" tab, then "Freeze," then "1 row").*
 
 ### How many California kindergartners got each vaccine each school year?
 1. Use StudentData.csv in Google Sheets
@@ -53,11 +53,11 @@
 1. Use StudentData.csv in Google Sheets
 2. 
 
-### From the 2000 to 2015 school years, were more California kindergartners exempt from vaccinations in public or private schools? What percentage of private school kindergartners were exempt based on beliefs vs. medical reasons?
+### Between the 2000 and 2015 school years, were more California kindergartners exempt from vaccinations in public or private schools? What percentage of kindergartners in each school type were exempt based on beliefs vs. medical reasons?
 1. Use StudentData.csv in Google Sheets
 2. Click in the upper left corner of the sheet, go to the "Data" tab, click "Pivot table," then click "CREATE" to create a pivot table from the *entire* data set
 3. Add "schoolType" to the "Rows" section of the pivot table settings and select "ascending order"
-4. Add "n," "nPBE," and "nPME" to the "Values" section of the pivot table settings, making sure that they are being summarized by "SUM"
+4. Add "n," "nPBE," and "nPME" to the "Values" section of the pivot table settings, making sure that they are summarized by "SUM"
 5. Create a new sheet by pressing the "+" button in the bottom left of the Google Sheets program
 6. Copy and paste all of the white cells from the pivot table into this new sheet, leaving room for new headers
 7. Write the titles for the old headers in the new sheet (school type, n, nPBE, nPME)
@@ -70,9 +70,9 @@
 14. The percentages come out as decimals first, so click on "F" to select the whole column and select "Format as %" in the tool bar
 15. **_ANSWER PART 1: 3.23% of total private school kindergartners were exempt from vaccinations from the 2000 to 2015 school years; 1.81% of total public school kindergartners were exempt from vaccinations_**
 16. Insert a new column to the right of "Percent Exempt" titled "Percent Belief" (column G)
-17. In cell G2, divide the contents of cell C2 by E2 (_ by _)
-18. In cell G3, divide the contents of cell C3 by E3 (_ by _)
-19. **_ANSWER PART 2: _**
+17. In cell G2, divide the contents of cell C2 by E2 (number of private school kindergartners exempt for beliefs by the total number of private school kindergartners exempt)
+18. In cell G3, divide the contents of cell C3 by E3 (number of public school kindergartners exempt for beliefs by the total number of public school kindergartners exempt)
+19. **_ANSWER PART 2: 93.21% of private school kindergartners in California who were exempt from their vaccinations between the 2000 and 2015 school years had "personal belief exemptions"; 91.38% of exempted public school kindergartners were exempt based on beliefs"_**
 20. (screenshot of all parts here)
 
 ### List the 5 counties (of the schools) with the highest personal belief exemption rates during the 2015 school year.
