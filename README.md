@@ -16,7 +16,7 @@
 3. Add "year" to the "Rows" section of the pivot table settings and select "ascending order"
 4. Add "nMMR," "nPolio," and "nDTP" to the "Values" section of the pivot table settings, making sure that they are being summarized by "SUM"
 6. Highlight B2:C3, change format to "number" 
-7. **_(TotalVaccinated photo here)_**
+7. **_screenshot here_**
 
 ### What percentage of California kindergartners were fully vaccinated in MMR, Polio, and DTP in 2000 versus 2015? How did this number change over time?
 1. Use StudentData.csv in Google Sheets
@@ -38,20 +38,16 @@
 3. **_Los Angeles had 143 Pertussis cases in 2014, only 1 of which died_**
 4. Sort "County" column from A-->Z to return to original file set-up
 5. Add a title to Column F: "DEATH RATE"
-6. Formula: =$D$2/$B$2 (divide deaths by cases)
+6. In cell F2, write the formula =$D$2/$B$2 (divides the number of deaths by the number of cases)
 7. Double click square in the bottom of the cell to copy the formula down the length of the column
-8. Format as %
-9. Sort Z-->A
+8. Convert the decimals to percentages by clicking "format as %" in the Google Sheets tool bar
+9. To find the highest death rate, sort column F from Z-->A by clicking on the down arrow at the top of the column
 10. **_Placer County had the highest infant death rate of 33.33% in 2014 (1 in 3 cases died); only 4 counties had any deaths (1 each)_**
 
 ### Which California county had the highest rate of Pertussis cases in 2014? How does this county compare to the one found in part 1 of the question above?
 1. Use pertusisRates2010_2015.csv in Google Sheets
 2. Sort the "Rate 2014" column from Z-->A by hovering over the column letter (K) and clicking the down arrow that appears
 3. **_Sonoma County had the highest rate of Pertussis cases in 2014 (142.18 per 100,000 people); although Los Angeles had the most infant Pertussis cases in 2014, the county only had 20.25 cases per 100,000 people in 2014_**
-
-### How did the total number of students with vaccine exemptions change over time, from 2000 to 2015? Personal belief exemptions?
-1. Use StudentData.csv in Google Sheets
-2. 
 
 ### Between the 2000 and 2015 school years, were more California kindergartners exempt from vaccinations in public or private schools? What percentage of kindergartners in each school type were exempt based on beliefs vs. medical reasons?
 1. Use StudentData.csv in Google Sheets
@@ -73,9 +69,24 @@
 17. In cell G2, divide the contents of cell C2 by E2 (number of private school kindergartners exempt for beliefs by the total number of private school kindergartners exempt)
 18. In cell G3, divide the contents of cell C3 by E3 (number of public school kindergartners exempt for beliefs by the total number of public school kindergartners exempt)
 19. **_93.21% of private school kindergartners in California who were exempt from their vaccinations between the 2000 and 2015 school years had "personal belief exemptions"; 91.38% of exempted public school kindergartners were exempt based on beliefs"_**
-20. (screenshot of all parts here)
 
-### List the 5 counties (of the schools) with the highest personal belief exemption rates during the 2015 school year.
+### How did the total number of California kindergarten students with vaccine exemptions change over time, from 2000 to 2015? Personal belief exemptions?
+1. Use StudentData.csv in Google Sheets
+2. Click in the upper left corner of the sheet, go to the "Data" tab, click "Pivot table," then click "CREATE" to create a pivot table from the *entire* data set
+3. Add "year" to the "Rows" section of the pivot table settings and select "ascending order"
+4. Add "year" to the "Filters" section of the pivot table settings and select only 2000 and 2015
+5. Add "n," "Exempt Sum," and "nPBE" to the "Values" section of the pivot table settings, making sure that they are summarized by "SUM"
+6. Create a new sheet by pressing the "+" button in the bottom left of the Google Sheets program
+7. Copy and paste all of the white cells from the pivot table into this new sheet, leaving room for new headers
+8. Write the titles for the old headers in the new sheet (Year, n, Exempt Sum, nPBE)
+9. Create a new row below the table titled "Percent Change"
+10. Use the following formula to calculate the percent change in the total number of exemptions and number of personal belief exemptions from the 2000 school year to the 2015 school year: =(NEW-OLD)/OLD
+    1. In cell C6, type "=(10142-10225)/10225" then press enter
+    2. In cell D6, type "=(9226-9654)/9654" then press enter
+10. Change the decimals calculated into percentages by clicking "format as %" in the tool bar
+12. **From the 2000-2001 school year to the 2015-2016 school year, the total number of vaccination exemptions decreased by 0.81%; the total number of personal belief exemptions decreased by 4.43%**
+
+### List the 5 counties (of the schools) with the highest personal belief exemption rates during the 2015-2016 school year.
 1. Use StudentData.csv in Google Sheets
 
 *need to redo steps starting here*
@@ -87,4 +98,4 @@
 8. rates come out as decimals, must click the column letter (L) to highlight the whole column, then “format as %” in the row of tools above the sheet
 9. click the down arrow next to the column letter (still L), select "sort sheet Z-->A"
 10. **_Napa (100% at Kolbe Academy in 2012), Riverside (100% at Applied Scholastics Online Academy in 2013), Alameda (100% at Muhammad University O in 2003 and 2004), Marin (100% at North Bay Christian Academy in 2001), Santa Cruz (97.22% at Santa Cruz Waldorf in 2010)_**
-11. Important to note that the schools are different sizes... again, some religious...
+    1. Important to note that the schools are different sizes... again, some religious...
