@@ -48,7 +48,7 @@
     4. To find the highest death rate, sort column F from Z-->A
 6. **_Placer County had the highest infant death rate of 33.33% in 2014 (1 in 3 cases died); only 4 counties had any deaths (1 each)_**
 
-### Which California county had the highest rate of Pertussis cases in 2014? How does this county compare to the one found in part 1 of the question above?
+### Which California county had the highest rate of Pertussis cases in 2014? How does this county compare to the county with the most infant Pertussis cases in 2014 (found above)?
 1. Use pertusisRates2010_2015.csv in Google Sheets
 2. Sort the "Rate 2014" column from Z-->A
 3. **_Sonoma County had the highest rate of Pertussis cases in 2014 (142.18 per 100,000 people); although Los Angeles had the most infant Pertussis cases in 2014, the county only had 20.25 cases per 100,000 people in 2014_**
@@ -74,20 +74,9 @@
     2. In cell G3, divide the contents of cell C3 by E3 (number of public school kindergartners exempt for beliefs by the total number of public school kindergartners exempt)
 8. **_93.21% of private school kindergartners in California who were exempt from their vaccinations between the 2000 and 2015 school years had "personal belief exemptions"; 91.38% of exempted public school kindergartners were exempt based on beliefs"_**
 
-### List the 5 counties (of the schools) with the highest personal belief exemption rates during the 2015-2016 school year.
+### List the 5 counties (of the schools) with the highest personal belief exemption rates during the 2013-2014 and 2014-1015 school years. How do these counties compare to those with the most Pertussis cases in 2014?
 1. Use StudentData.csv in Google Sheets
-
-*need to redo steps starting here*
-
-3. right click column K and insert 1 column left (becomes the new column K), titled "exemption sum"
-4. formula: =SUM($I$2,$J$2), then double click the square in the bottom of the cell so that it copies the formula down the length of the column
-5. right click column K ("exemption sum") and insert a column right (column L), titled "exemption rate" 
-6. formula: =$K$2/$E$2, column E being "n"
-7. Double click the square in the bottom of the cell so that it copies the formula down the length of the column
-8. rates come out as decimals, must click the column letter (L) to highlight the whole column, then “format as %” in the row of tools above the sheet
-9. click the down arrow next to the column letter (still L), select "sort sheet Z-->A"
-10. **_Napa (100% at Kolbe Academy in 2012), Riverside (100% at Applied Scholastics Online Academy in 2013), Alameda (100% at Muhammad University O in 2003 and 2004), Marin (100% at North Bay Christian Academy in 2001), Santa Cruz (97.22% at Santa Cruz Waldorf in 2010)_**
-    1. Important to note that the schools are different sizes... again, some religious...
+2. 
 
 ### How did the total number of California kindergarten students with vaccine exemptions change over time, from 2000 to 2015? Personal belief exemptions?
 1. Use StudentData.csv in Google Sheets
