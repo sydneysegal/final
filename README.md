@@ -13,28 +13,28 @@
 ### How many California kindergartners got each vaccine each school year?
 1. Use StudentData.csv in Google Sheets
 2. Create a pivot table from the *entire* data set to be able to summarize how many students got each vaccine per year
-3. Add "year" to the "Rows" section of the pivot table settings and select "ascending order"
-4. Add "nMMR," "nPolio," and "nDTP" to the "Values" section of the pivot table settings, making sure that they are being summarized by "SUM"
-    1.  These should appear as columns
-5. Highlight B2:C3 (the values) and change their format to "number" to produce the more readable answers, as shown in the screenshot below
+    1. Add "year" to the "Rows" section of the pivot table settings and select "ascending order"
+    2. Add "nMMR," "nPolio," and "nDTP" to the "Values" section of the pivot table settings, making sure that they are being summarized by "SUM"
+        1.  These should appear as columns automatically
+    3. Highlight B2:C3 (the values) and change their format to "number" to produce the more readable answers, as shown in the screenshot below
 6. **_screenshot here_**
 
 ### What percentage of California kindergartners were fully vaccinated in MMR, Polio, and DTP in 2000 versus 2015? How did this number change over time?
 1. Use StudentData.csv in Google Sheets
 2. Create a pivot table from the *entire* data set
-3. Add "year" to the "Rows" section of the pivot table settings and select "ascending order"
-4. Add "n," "nMMR," "nDTP," and "nPolio" to the "Values" section of the pivot table settings, making sure that they are being summarized by "SUM"
-5. Add "year" to the "Filters" section of the pivot table settings and select just 2000 and 2015
-6. Copy just the numbers from the pivot table into a new sheet (copying the headers will replicate the entire pivot table) starting in row 2
-7. Write the titles from the pivot table in row 1 ("Year," "n," "nMMR," "nDTP," "nPolio")
-8. Although it may not be the same students that are getting each vaccination, it is likely that they are required to have certain vaccinations to be in school and that there is a crossover. For the purpose of this question, I am assuming that the lowest sum in each row is *approximately* how many kindergartners are fully vaccinated against MMR, DTP, and Polio. 
-9. Divide lowest number in each row (Sum of nDTP) by the "Sum of n" for each year to find the approximate percentage of California kindergartners with each vaccine by the start of the school year
-    1. 2000: 497532/521198 = 0.95459 or 95.46%
-    2. 2015: 516030/547520 = 0.9424 or 94.24%
-11. **_At the start of the 2000-2001 school year, approximately 95.46% of California kindergartners (497,532) had each vaccine; at the start of the 2015-2016 school year, approximately 94.24% of California kindergartners (517,882) had each vaccine_**
-12. To calculate how the number of full vaccinations changed over time, the percent change formula is (NEW-OLD)/OLD
+    1. Add "year" to the "Rows" section of the pivot table settings and select "ascending order"
+    2. Add "n," "nMMR," "nDTP," and "nPolio" to the "Values" section of the pivot table settings, making sure that they are being summarized by "SUM"
+    3. Add "year" to the "Filters" section of the pivot table settings and select just 2000 and 2015
+3. Copy just the numbers from the pivot table into a new sheet (copying the headers will replicate the entire pivot table) starting in row 2
+    1. Write the titles from the pivot table in row 1 ("Year," "n," "nMMR," "nDTP," "nPolio")
+4. Although it may not be the same students that are getting each vaccination, it is likely that they are required to have certain vaccinations to be in school and that there is a crossover. For the purpose of this question, I am assuming that the lowest sum in each row is *approximately* how many kindergartners are fully vaccinated against MMR, DTP, and Polio. 
+    1. Divide lowest number in each row (Sum of nDTP) by the "Sum of n" for each year to find the approximate percentage of California kindergartners with each vaccine by the start of the school year
+        1. 2000: 497532/521198 = 0.95459 or 95.46%
+        2. 2015: 516030/547520 = 0.9424 or 94.24%
+5. **_At the start of the 2000-2001 school year, approximately 95.46% of California kindergartners (497,532) had each vaccine; at the start of the 2015-2016 school year, approximately 94.24% of California kindergartners (517,882) had each vaccine_**
+6. To calculate how the number of full vaccinations changed over time, the percent change formula is (NEW-OLD)/OLD
     1. Percent change = (517882-497532)/497532 = 0.0409 or 4.09% increase
-13. **_The approximate number of fully vaccinated California kindergartners increased by 4.09% from the 2000 to 2015 school year_**
+7. **_The approximate number of fully vaccinated California kindergartners increased by 4.09% from the 2000 to 2015 school year_**
 
 ### Which California county had the most infant Pertussis cases in 2014? Highest death rate?
 1. Use InfantData.csv in Google Sheets
@@ -42,11 +42,11 @@
 3. **_Los Angeles had 143 Pertussis cases in 2014, only 1 of which died_**
 4. Sort "County" column from A-->Z to return to original file set-up
 5. Add a title to Column F: "DEATH RATE"
-6. In cell F2, write the formula =$D$2/$B$2 (divides the number of deaths by the number of cases)
-7. Double click square in the bottom of the cell to copy the formula down the length of the column
-8. Format the decimals as percentages
-9. To find the highest death rate, sort column F from Z-->A
-10. **_Placer County had the highest infant death rate of 33.33% in 2014 (1 in 3 cases died); only 4 counties had any deaths (1 each)_**
+    1. In cell F2, write the formula =$D$2/$B$2 (divides the number of deaths by the number of cases)
+    2. Double click square in the bottom of the cell to copy the formula down the length of the column
+    3. Format the decimals as percentages
+    4. To find the highest death rate, sort column F from Z-->A
+6. **_Placer County had the highest infant death rate of 33.33% in 2014 (1 in 3 cases died); only 4 counties had any deaths (1 each)_**
 
 ### Which California county had the highest rate of Pertussis cases in 2014? How does this county compare to the one found in part 1 of the question above?
 1. Use pertusisRates2010_2015.csv in Google Sheets
@@ -56,23 +56,23 @@
 ### Between the 2000 and 2015 school years, were more California kindergartners exempt from vaccinations in public or private schools? What percentage of kindergartners in each school type were exempt based on beliefs vs. medical reasons?
 1. Use StudentData.csv in Google Sheets
 2. Create a pivot table from the *entire* data set
-3. Add "schoolType" to the "Rows" section of the pivot table settings and select "ascending order"
-4. Add "n," "nPBE," and "nPME" to the "Values" section of the pivot table settings, making sure that they are summarized by "SUM"
-5. Create a new sheet
-6. Copy and paste all of the white cells from the pivot table into this new sheet, leaving room for new headers
-7. Write the titles for the old headers in the new sheet (school type, n, nPBE, nPME)
-8. Insert a column to the right of "nPME" titled "Sum Exempt" (column E)
-9. Write the following formula in cell E2 and hit enter: =SUM(C2,D2)
-10. Double click the quare in the bottom right of cell E2 to copy the formula down the column: =SUM(C3,D3) and =SUM(C4,D4), respectively
-11. Insert a column to the right of "Sum Exempt" titled "Percent Exempt" (column F)
-12. In cell F2, divide the contents of cell E2 by B2 for the percent of of kindergartners with exemptions in private schools (=E2/B2, then press enter)
-13. In cell F3, divide the contents of cell E3 by B3 for the percent of kindergartners with exemptions in public schools (=E3/B3, then press enter)
-14. Format the decimals as percentages
-15. **_3.23% of total private school kindergartners were exempt from vaccinations from the 2000 to 2015 school years; 1.81% of total public school kindergartners were exempt from vaccinations_**
-16. Insert a new column to the right of "Percent Exempt" titled "Percent Belief" (column G)
-17. In cell G2, divide the contents of cell C2 by E2 (number of private school kindergartners exempt for beliefs by the total number of private school kindergartners exempt)
-18. In cell G3, divide the contents of cell C3 by E3 (number of public school kindergartners exempt for beliefs by the total number of public school kindergartners exempt)
-19. **_93.21% of private school kindergartners in California who were exempt from their vaccinations between the 2000 and 2015 school years had "personal belief exemptions"; 91.38% of exempted public school kindergartners were exempt based on beliefs"_**
+    1. Add "schoolType" to the "Rows" section of the pivot table settings and select "ascending order"
+    2. Add "n," "nPBE," and "nPME" to the "Values" section of the pivot table settings, making sure that they are summarized by "SUM"
+3. Create a new sheet
+    1. Copy and paste all of the white cells from the pivot table into this new sheet, leaving room for new headers
+    2. Write the titles for the old headers in the new sheet (school type, n, nPBE, nPME)
+4. Insert a column to the right of "nPME" titled "Sum Exempt" (column E)
+    1. Write the following formula in cell E2 and hit enter: =SUM(C2,D2)
+    2. Double click the quare in the bottom right of cell E2 to copy the formula down the column: =SUM(C3,D3) and =SUM(C4,D4), respectively
+5. Insert a column to the right of "Sum Exempt" titled "Percent Exempt" (column F)
+    1. In cell F2, divide the contents of cell E2 by B2 for the percent of of kindergartners with exemptions in private schools (=E2/B2, then press enter)
+    2. In cell F3, divide the contents of cell E3 by B3 for the percent of kindergartners with exemptions in public schools (=E3/B3, then press enter)
+    3. Format the decimals as percentages
+6. **_3.23% of total private school kindergartners were exempt from vaccinations from the 2000 to 2015 school years; 1.81% of total public school kindergartners were exempt from vaccinations_**
+7. Insert a new column to the right of "Percent Exempt" titled "Percent Belief" (column G)
+    1. In cell G2, divide the contents of cell C2 by E2 (number of private school kindergartners exempt for beliefs by the total number of private school kindergartners exempt)
+    2. In cell G3, divide the contents of cell C3 by E3 (number of public school kindergartners exempt for beliefs by the total number of public school kindergartners exempt)
+8. **_93.21% of private school kindergartners in California who were exempt from their vaccinations between the 2000 and 2015 school years had "personal belief exemptions"; 91.38% of exempted public school kindergartners were exempt based on beliefs"_**
 
 ### List the 5 counties (of the schools) with the highest personal belief exemption rates during the 2015-2016 school year.
 1. Use StudentData.csv in Google Sheets
@@ -92,15 +92,15 @@
 ### How did the total number of California kindergarten students with vaccine exemptions change over time, from 2000 to 2015? Personal belief exemptions?
 1. Use StudentData.csv in Google Sheets
 2. Create a pivot table from the *entire* data set
-3. Add "year" to the "Rows" section of the pivot table settings and select "ascending order"
-4. Add "year" to the "Filters" section of the pivot table settings and select only 2000 and 2015
-5. Add "n," "Exempt Sum," and "nPBE" to the "Values" section of the pivot table settings, making sure that they are summarized by "SUM"
+    1. Add "year" to the "Rows" section of the pivot table settings and select "ascending order"
+    2. Add "year" to the "Filters" section of the pivot table settings and select only 2000 and 2015
+    3. Add "n," "Exempt Sum," and "nPBE" to the "Values" section of the pivot table settings, making sure that they are summarized by "SUM"
 6. Create a new sheet
-7. Copy and paste all of the white cells from the pivot table into this new sheet, leaving room for new headers
-8. Write the titles for the old headers in the new sheet (Year, n, Exempt Sum, nPBE)
-9. Create a new row below the table titled "Percent Change"
-10. Use the following formula to calculate the percent change in the total number of exemptions and number of personal belief exemptions from the 2000 school year to the 2015 school year: =(NEW-OLD)/OLD
-    1. In cell C6, type "=(10142-10225)/10225" then press enter
-    2. In cell D6, type "=(9226-9654)/9654" then press enter
-10. Change the decimals calculated into percentages
-12. **_From the 2000-2001 school year to the 2015-2016 school year, the total number of vaccination exemptions decreased by 0.81%; the total number of personal belief exemptions decreased by 4.43%_**
+    1. Copy and paste all of the white cells from the pivot table into this new sheet, leaving room for new headers
+    2. Write the titles for the old headers in the new sheet (Year, n, Exempt Sum, nPBE)
+    3. Create a new row below the table titled "Percent Change"
+    4. Use the following formula to calculate the percent change in the total number of exemptions and number of personal belief exemptions from the 2000 school year to the 2015 school year: =(NEW-OLD)/OLD
+        1. In cell C6, type "=(10142-10225)/10225" then press enter
+        2. In cell D6, type "=(9226-9654)/9654" then press enter
+    5. Change the decimals calculated into percentages
+7. **_From the 2000-2001 school year to the 2015-2016 school year, the total number of vaccination exemptions decreased by 0.81%; the total number of personal belief exemptions decreased by 4.43%_**
