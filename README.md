@@ -12,11 +12,11 @@
 
 ### How many California kindergartners got each vaccine each school year?
 1. Use StudentData.csv in Google Sheets
-2. Create a pivot table from the *entire* data set to be able to summarize how many students got each vaccine per year
+2. Create a pivot table from the *entire* data set to summarize how many students got each vaccine per year
     1. Add "year" to the "Rows" section of the pivot table settings and select "ascending order"
     2. Add "nMMR," "nPolio," and "nDTP" to the "Values" section of the pivot table settings, making sure that they are being summarized by "SUM"
         1.  These should appear as columns automatically
-    3. Highlight B2:C3 (the values) and change their format to "number" to produce the more readable answers, as shown in the screenshot below
+    3. Highlight B2:C3 (the values) and change their format to "number" to produce more readable answers, as shown in the screenshot below
 6. **_screenshot here_**
 
 ### What percentage of California kindergartners were fully vaccinated in MMR, Polio, and DTP in 2000 versus 2015? How did this number change over time?
@@ -28,7 +28,7 @@
 3. Copy just the numbers from the pivot table into a new sheet (copying the headers will replicate the entire pivot table) starting in row 2
     1. Write the titles from the pivot table in row 1 ("Year," "n," "nMMR," "nDTP," "nPolio")
 4. Although it may not be the same students that are getting each vaccination, it is likely that they are required to have certain vaccinations to be in school and that there is a crossover. For the purpose of this question, I am assuming that the lowest sum in each row is *approximately* how many kindergartners are fully vaccinated against MMR, DTP, and Polio. 
-    1. Divide lowest number in each row (Sum of nDTP) by the "Sum of n" for each year to find the approximate percentage of California kindergartners with each vaccine by the start of the school year
+    1. Divide lowest number in each row ("Sum of nDTP" for both years) by the "Sum of n" for each year to find the approximate percentage of California kindergartners with each vaccine by the start of the school year
         1. 2000: 497532/521198 = 0.95459 or 95.46%
         2. 2015: 516030/547520 = 0.9424 or 94.24%
 5. **_At the start of the 2000-2001 school year, approximately 95.46% of California kindergartners (497,532) had each vaccine; at the start of the 2015-2016 school year, approximately 94.24% of California kindergartners (517,882) had each vaccine_**
@@ -97,7 +97,7 @@
     3. Add "n," "Exempt Sum," and "nPBE" to the "Values" section of the pivot table settings, making sure that they are summarized by "SUM"
 6. Create a new sheet
     1. Copy and paste all of the white cells from the pivot table into this new sheet, leaving room for new headers
-    2. Write the titles for the old headers in the new sheet (Year, n, Exempt Sum, nPBE)
+    2. Write the titles for the old headers in the new sheet ("Year," "n, "Exempt Sum," "nPBE")
     3. Create a new row below the table titled "Percent Change"
     4. Use the following formula to calculate the percent change in the total number of exemptions and number of personal belief exemptions from the 2000 school year to the 2015 school year: =(NEW-OLD)/OLD
         1. In cell C6, type "=(10142-10225)/10225" then press enter
