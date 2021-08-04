@@ -1,4 +1,4 @@
-# Final Project: California Kindergarten Immunization Records
+# J124 Final Project: *California Kindergarten Immunization Records*
 
 ## Story Summary and Sourcing
 * does not include every school in every county
@@ -80,7 +80,7 @@
     2. In cell G3, divide the contents of cell C3 by E3 (number of public school kindergartners exempt for beliefs by the total number of public school kindergartners exempt)
 8. **_93.21% of private school kindergartners in California who were exempt from their vaccinations between the 2000 and 2015 school years had "personal belief exemptions"; 91.38% of exempted public school kindergartners were exempt based on beliefs"_**
 
-### List the 5 counties (of the schools) with the highest exemption rates during the 2013-2014 and 2014-2015 school years. How do these counties compare to those with the most Pertussis cases in 2014?
+### List the 5 counties (of the schools) with the highest exemption rates during the 2013-2014 and 2014-2015 school years. How do these counties compare to the 5 with the most Pertussis cases in 2014?
 1. Use StudentData.csv in Google Sheets
 2. Insert a new column to the right of column J (becomes the new column K), titled "Exempted Sum"
     1. In the first cell of column K (K2), write the formula =SUM($I$2,$J$2) to take the sum of students exempt from vaccinations for belief *and* medical reasons, then double-click the square in the bottom of the cell to copy the formula down the length of the column 
