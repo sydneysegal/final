@@ -4,7 +4,7 @@
 * does not include every school in every county
 
 ## Data Visualization 
-* chloropleth map
+* choropleth map
 
 ## Data Analysis Process
 
@@ -101,7 +101,7 @@
 4. Sort column L ("Exemption Rate") from Z to A so that the highest exemption rate is at the top
 5. Add a filter to column M ("year") and select only 2013 and 2014 (so that the spreadsheet only shows data from those two school years)
 6. **_Riverside (100% exemption at Applied Scholastics Academy in 2013), Sacramento (92.86% at Grace Family Christian School in 2014), Los Angeles (88.24% at The City School in 2013 and 86.67% at Maple Village Waldorf School in 2013), Alameda (86.96% at Berkeley Rose School in 2014), El Dorado (84.21% at Cedar Springs Waldorf School in 2014_**
-    1. NOTE: All of the exemptions in question were based on beliefs/not for medical reasons, and all of the schools were private with less than 25 students
+    1. NOTE: All of the exemptions in question were based on beliefs/not for medical reasons, and all of the schools were private with 20 students or less
     2. ![Top 5 California Counties with the Highest Exemption Rates at Schools in 2013 and 2014,'5 counties of the schools with the highest exemption rates during the 2013-2014 and 2014-2015 school years'](/5Counties.png)
 
 ### How did the total number of California kindergarten students with vaccine exemptions change over time, from 2000 to 2015? Personal belief exemptions?
@@ -116,4 +116,4 @@
         2. In cell D6, type "=(D3-D2)/D2)" or "=(12763-3819)/3819" then press enter
     2. Change the decimals calculated into percentages
 4. **_From the 2000-2001 school year to the 2015-2016 school year, the total number of vaccination exemptions increased by 211.59%; the total number of personal belief exemptions increased by 234.2%_**
-    1. ![Total Number of Students with Vaccine Exemptions 2000 versus 2015,'screenshot of Google Sheets spreadsheet with total number of exemptions and belief exemptions over time from 2000 and 2015'](/ExemptionTime.png)
+    1. ![Total Number of Students with Vaccine Exemptions 2000 versus 2015,'screenshot of Google Sheets spreadsheet with total number of exemptions and belief exemptions over time from 2000 and 2015'](/ExemptChange.png)
