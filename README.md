@@ -61,8 +61,8 @@
 2. Freeze the first column of the sheet so that the county names stay in place when scrolling to distant columns/cases and rates can be easily compared against the counties
 3. Sort the "Rate 2014" column from Z-->A to reveal the highest rates at the top of the spreadsheet
 4. **_Sonoma County had the highest rate of Pertussis cases in 2014 (142.18 per 100,000 people); although Los Angeles had the most infant Pertussis cases in 2014 (2.1 per 1,000 infants according to Kaggle and included in the table above), the county only had 20.25 cases per 100,000 people in 2014_**
-    1. **_Comparing the Los Angeles County figures mentioned, 2.1 cases per 1,000 infants is equivalent to 210 cases per 100,000 infants, so... In 2014, Los Angeles County had 10 times as many Pertussis cases in infants than they did the whole population_**
-    2. ![California County with Most Pertussis cases versus Los Angeles in 2014,'Sonoma County had the highest rate of Pertussis cases in 2014 at 142.18 per 100k people and Los Angeles had only 20.25 per 100k people'](/)
+    1. **_Comparing just the Los Angeles figures, Los Angeles County had 10 times as many Pertussis cases in infants than they did the whole population in 2014 (2.1 cases per 1,000 infants is equivalent to 210 cases per 100,000 infants)_**
+    2. ![California County with Most Pertussis cases versus Los Angeles in 2014,'Sonoma County had the highest rate of Pertussis cases in 2014 at 142.18 per 100k people and Los Angeles had only 20.25 per 100k people'](/PertussisRates.png)
 
 ### Between the 2000 and 2015 school years, were more California kindergartners exempt from vaccinations in public or private schools? What percentage of kindergartners in each school type were exempt based on beliefs vs. medical reasons?
 1. Use StudentData.csv in Google Sheets
@@ -84,6 +84,7 @@
     1. In cell G2, divide the contents of cell C2 by E2 (number of private school kindergartners exempt for beliefs by the total number of private school kindergartners exempt)
     2. In cell G3, divide the contents of cell C3 by E3 (number of public school kindergartners exempt for beliefs by the total number of public school kindergartners exempt)
 8. **_93.21% of private school kindergartners in California who were exempt from their vaccinations between the 2000 and 2015 school years had "personal belief exemptions"; 91.38% of exempted public school kindergartners were exempt based on beliefs"_**
+    1. ![Vaccination Exemptions by School Type,'summary statistics of vaccination exemptions in public and private schools in California from 2000 to 2015'](/SchoolType.png)
 
 ### List the 5 counties (of the schools) with the highest exemption rates during the 2013-2014 and 2014-2015 school years.
 1. Use StudentData.csv in Google Sheets
