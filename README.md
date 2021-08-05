@@ -80,7 +80,7 @@
     2. In cell G3, divide the contents of cell C3 by E3 (number of public school kindergartners exempt for beliefs by the total number of public school kindergartners exempt)
 8. **_93.21% of private school kindergartners in California who were exempt from their vaccinations between the 2000 and 2015 school years had "personal belief exemptions"; 91.38% of exempted public school kindergartners were exempt based on beliefs"_**
 
-### List the 5 counties (of the schools) with the highest exemption rates during the 2013-2014 and 2014-2015 school years. How do these counties compare to the 5 with the most Pertussis cases in 2014?
+### List the 5 counties (of the schools) with the highest exemption rates during the 2013-2014 and 2014-2015 school years.
 1. Use StudentData.csv in Google Sheets
 2. Insert a new column to the right of column J (becomes the new column K), titled "Exempted Sum"
     1. In the first cell of column K (K2), write the formula =SUM($I$2,$J$2) to take the sum of students exempt from vaccinations for belief *and* medical reasons, then double-click the square in the bottom of the cell to copy the formula down the length of the column 
@@ -92,9 +92,6 @@
 5. Add a filter to column M ("year") and select only 2013 and 2014 (so that the spreadsheet only shows data from those two school years)
 6. **_Riverside (100% exemption at Applied Scholastics Academy in 2013), Sacramento (92.86% at Grace Family Christian School in 2014), Los Angeles (88.24% at The City School in 2013 and 86.67% at Maple Village Waldorf School in 2013), Alameda (86.96% at Berkeley Rose School in 2014), El Dorado (84.21% at Cedar Springs Waldorf School in 2014_**
     1. NOTE: All of the exemptions in question were based on beliefs/not for medical reasons, and all of the schools had less than 25 students
-7. copy pertussis cases data set into new sheet in the studentdata file
-8. use vlookup in column N for most pertussis cases in 2014 (school years overlap, which is why 2013 and 2014 school years would cover this time period)
-9. **_second answer here_**
 
 ### How did the total number of California kindergarten students with vaccine exemptions change over time, from 2000 to 2015? Personal belief exemptions?
 1. Use StudentData.csv in Google Sheets
