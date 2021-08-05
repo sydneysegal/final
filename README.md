@@ -18,7 +18,7 @@
         1.  These should appear as columns automatically
     3. Add "year" to the "Filters" section of the pivot table settings and select all but "(Blanks)"
     4. Highlight B2:D18 (the values) and change their format to "number" to produce more readable answers, as shown in the screenshot below
-6. **_screenshot 1 here_**
+6. ![Breakdown of vaccinations by year,'total number of vaccinations by year'](/YearBreakdown.png)
 
 ### What percentage of California kindergartners were fully vaccinated in MMR, DTP, and Polio in 2000 versus 2015? How did this number change over time?
 1. Use StudentData.csv in Google Sheets
