@@ -18,7 +18,7 @@
         1.  These should appear as columns automatically
     3. Add "year" to the "Filters" section of the pivot table settings and select all but "(Blanks)"
     4. Highlight B2:D18 (the values) and change their format to "number" to produce more readable answers, as shown in the screenshot below
-3. ![Breakdown of vaccinations by year,'total number of kindergartner MMR DTP and Polio vaccinations by year'](/YearBreakdown.png)
+        1. ![Breakdown of vaccinations by year,'total number of kindergartner MMR DTP and Polio vaccinations by year'](/YearBreakdown.png)
 
 ### What percentage of California kindergartners were fully vaccinated in MMR, DTP, and Polio in 2000 versus 2015? How did this number change over time?
 1. Use StudentData.csv in Google Sheets
@@ -38,20 +38,23 @@
     1. Add a new row below the table to include this calculation (write the title "Percent Change" in cell C6)
     2. Percent change = (516030-497532)/497532 = 0.037179 or 3.72% increase (format as percent)
 7. **_The approximate number of fully vaccinated California kindergartners increased by 3.72% from the 2000 to 2015 school year_**
-8. ![Approximate Number of Fully Vaccinated CA Kindergartners from 2000 to 2015,'Google Sheets table of vaccination breakdown for California kindergartners in 2000 and 2015 with percent fully vaccinated based on lowest number for individual vaccines'](/FullVax.png)
+    1. ![Approximate Number of Fully Vaccinated CA Kindergartners from 2000 to 2015,'Google Sheets table of vaccination breakdown for California kindergartners in 2000 and 2015 with percent fully vaccinated based on lowest number for individual vaccines'](/FullVax.png)
 
 ### Which California county had the most infant Pertussis cases in 2014? Highest death rate?
 1. Use InfantData.csv in Google Sheets
 2. Sort "Cases" column from Z-->A
 3. **_Los Angeles had 143 Pertussis cases in 2014, only 1 of which died_**
-4. Sort "County" column from A-->Z to return to original file set-up
-5. Add a title to Column F: "DEATH RATE"
-    1. In cell F2, write the formula =$D$2/$B$2 (divides the number of deaths by the number of cases)
-    2. Double click square in the bottom of the cell to copy the formula down the length of the column
-    3. Ignore or delete the contents of any cells in which the #DIV/0! error appears (these counties had 0 Pertussis cases in 2014)
+    1. ![Top 5 California Counties With Most Pertussis Cases in 2014,'Los Angeles County had the most pertussis cases in infants in 2014](/InfantCases.png)
+5. Sort "County" column from A-->Z to return to original file set-up
+6. Add a title to Column F: "DEATH RATE"
+    1. In cell F2, write the formula =D2/B2 (divides the number of deaths by the number of cases)
+    2. Drag the square in the bottom of the cell to the bottom of the column (row 59) to copy the formula down the length of the column
+        1. Make sure that the formula has changed by row for each cell, D3/B3 for row 3, D4/B4 for row 4, etc.
+    3. Delete the contents of any cells in which the #DIV/0! error appears (these counties had 0 Pertussis cases in 2014)
     4. Format the remaining decimals as percentages
     5. To find the highest death rate, sort column F from Z-->A
-6. **_Placer County had the highest infant death rate of 33.33% in 2014 (1 in 3 cases died); only 4 counties had any deaths (1 each)_**
+7. **_Placer County had the highest infant death rate of 33.33% in 2014 (1 in 3 cases died); only 4 counties had any deaths (1 each)_**
+    1. ![Infant Death Rate by Pertussis in 2014 in the Top 5 California Counties,'Google Sheets table of the top 5 California counties with the highest death rates of infants with pertussis in 2014'](/InfantDeath.png)
 
 ### Which California county had the highest rate of Pertussis cases in 2014? How does this county compare to the county with the most infant Pertussis cases in 2014 (found above)?
 1. Use pertusisRates2010_2015.csv in Google Sheets
