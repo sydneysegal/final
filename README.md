@@ -18,7 +18,7 @@
         1.  These should appear as columns automatically
     3. Add "year" to the "Filters" section of the pivot table settings and select all but "(Blanks)"
     4. Highlight B2:D18 (the values) and change their format to "number" to produce more readable answers, as shown in the screenshot below
-6. ![Breakdown of vaccinations by year,'total number of vaccinations by year'](/YearBreakdown.png)
+3. ![Breakdown of vaccinations by year,'total number of kindergartner MMR DTP and Polio vaccinations by year'](/YearBreakdown.png)
 
 ### What percentage of California kindergartners were fully vaccinated in MMR, DTP, and Polio in 2000 versus 2015? How did this number change over time?
 1. Use StudentData.csv in Google Sheets
@@ -38,7 +38,7 @@
     1. Add a new row below the table to include this calculation (write the title "Percent Change" in cell C6)
     2. Percent change = (516030-497532)/497532 = 0.037179 or 3.72% increase (format as percent)
 7. **_The approximate number of fully vaccinated California kindergartners increased by 3.72% from the 2000 to 2015 school year_**
-8. **_screenshot here_**
+8. ![Approximate Number of Fully Vaccinated CA Kindergartners from 2000 to 2015,'Google Sheets table of vaccination breakdown for California kindergartners in 2000 and 2015 with percent fully vaccinated based on lowest number for individual vaccines'](/FullVax.png)
 
 ### Which California county had the most infant Pertussis cases in 2014? Highest death rate?
 1. Use InfantData.csv in Google Sheets
