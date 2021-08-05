@@ -68,8 +68,8 @@
     1. Copy and paste all of the white cells from the pivot table into this new sheet, leaving room for new headers
     2. Write the titles for the old headers in the new sheet (school type, n, nPBE, nPME)
 4. Insert a column to the right of "nPME" titled "Sum Exempt" (column E)
-    1. Write the following formula in cell E2 and hit enter: =SUM(C2,D2)
-    2. Double click the quare in the bottom right of cell E2 to copy the formula down the column: =SUM(C3,D3) and =SUM(C4,D4), respectively
+    1. Write the following formula in cell E2 and hit enter: =SUM(C2:D2)
+    2. Double click the quare in the bottom right of cell E2 to copy the formula down the column: =SUM(C3:D3) and =SUM(C4"D4), respectively
 5. Insert a column to the right of "Sum Exempt" titled "Percent Exempt" (column F)
     1. In cell F2, divide the contents of cell E2 by B2 for the percent of of kindergartners with exemptions in private schools (=E2/B2, then press enter)
     2. In cell F3, divide the contents of cell E3 by B3 for the percent of kindergartners with exemptions in public schools (=E3/B3, then press enter)
@@ -91,7 +91,7 @@
 4. Sort column L ("Exemption Rate") from Z to A so that the highest 
 5. Add a filter to column M ("year") and select only 2013 and 2014 (so that the spreadsheet only shows data from those two school years)
 6. **_Riverside (100% exemption at Applied Scholastics Academy in 2013), Sacramento (92.86% at Grace Family Christian School in 2014), Los Angeles (88.24% at The City School in 2013 and 86.67% at Maple Village Waldorf School in 2013), Alameda (86.96% at Berkeley Rose School in 2014), El Dorado (84.21% at Cedar Springs Waldorf School in 2014_**
-    1. **_NOTE: All of the exemptions in question were based on beliefs, and all of the schools had less than 25 students_**
+    1. NOTE: All of the exemptions in question were based on beliefs/not for medical reasons, and all of the schools had less than 25 students
 7. copy pertussis cases data set into new sheet in the studentdata file
 8. use vlookup in column N for most pertussis cases in 2014 (school years overlap, which is why 2013 and 2014 school years would cover this time period)
 9. **_second answer here_**
@@ -107,7 +107,7 @@
     2. Write the titles for the old headers in the new sheet ("Year," "n, "Exempted Sum," "nPBE")
     3. Create a new row below the table titled "Percent Change"
     4. Use the following formula to calculate the percent change in the total number of exemptions and number of personal belief exemptions from the 2000 school year to the 2015 school year: =(NEW-OLD)/OLD
-        1. In cell C6, type "=(10142-10225)/10225" then press enter
-        2. In cell D6, type "=(9226-9654)/9654" then press enter
+        1. In cell C6, type "=(C3-C2)/C2)" or "=(13679-4390)/4390" then press enter
+        2. In cell D6, type "=(D3-D2)/D2)" or "=(12763-3819)/3819" then press enter
     5. Change the decimals calculated into percentages
-7. **_From the 2000-2001 school year to the 2015-2016 school year, the total number of vaccination exemptions decreased by 0.81%; the total number of personal belief exemptions decreased by 4.43%_**
+7. **_From the 2000-2001 school year to the 2015-2016 school year, the total number of vaccination exemptions increased by 211.59%; the total number of personal belief exemptions increased by 234.2%_**
