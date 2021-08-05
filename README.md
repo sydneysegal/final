@@ -17,8 +17,9 @@
     2. Add "nMMR," "nDTP," and "nPolio" to the "Values" section of the pivot table settings, making sure that they are being summarized by "SUM"
         1.  These should appear as columns automatically
     3. Add "year" to the "Filters" section of the pivot table settings and select all but "(Blanks)"
-    4. Highlight B2:D18 (the values) and change their format to "number" to produce more readable answers, as shown in the screenshot below
+    4. Highlight B2:D18 (the values) and change their format to "number" to produce more readable answers, as **_shown in the screenshot below_**
         1. ![Breakdown of vaccinations by year,'total number of kindergartner MMR DTP and Polio vaccinations by year'](/YearBreakdown.png)
+        2. **_Most notable from the answers above is that the highest number of students were vaccinated against MMR, DTP, and Polio in 2015 (517k, 516k, and 518k, respectively); the second-highest number of students for all three vaccinations occurred in 2000 (497k, 497k, and 500k), the first school year that the data was recorded_**
 
 ### What percentage of California kindergartners were fully vaccinated in MMR, DTP, and Polio in 2000 versus 2015? How did this number change over time?
 1. Use StudentData.csv in Google Sheets
