@@ -106,12 +106,10 @@
     1. Add "year" to the "Rows" section of the pivot table settings and select "ascending order"
     2. Add "year" to the "Filters" section of the pivot table settings and select only 2000 and 2015
     3. Add "n," "Exempted Sum," and "nPBE" to the "Values" section of the pivot table settings, making sure that they are summarized by "SUM"
-6. Create a new sheet
-    1. Copy and paste all of the white cells from the pivot table into this new sheet, leaving room for new headers
-    2. Write the titles for the old headers in the new sheet ("Year," "n, "Exempted Sum," "nPBE")
-    3. Create a new row below the table titled "Percent Change"
-    4. Use the following formula to calculate the percent change in the total number of exemptions and number of personal belief exemptions from the 2000 school year to the 2015 school year: =(NEW-OLD)/OLD
+3. Create a new row below the pivot titled "Percent Change" (type in cell A6)
+    1. Use the following formula to calculate the percent change in the total number of exemptions and number of personal belief exemptions from the 2000 school year to the 2015 school year: =(NEW-OLD)/OLD
         1. In cell C6, type "=(C3-C2)/C2)" or "=(13679-4390)/4390" then press enter
         2. In cell D6, type "=(D3-D2)/D2)" or "=(12763-3819)/3819" then press enter
-    5. Change the decimals calculated into percentages
-7. **_From the 2000-2001 school year to the 2015-2016 school year, the total number of vaccination exemptions increased by 211.59%; the total number of personal belief exemptions increased by 234.2%_**
+    2. Change the decimals calculated into percentages
+4. **_From the 2000-2001 school year to the 2015-2016 school year, the total number of vaccination exemptions increased by 211.59%; the total number of personal belief exemptions increased by 234.2%_**
+    1. ![Total Number of Students with Vaccine Exemptions 2000 versus 2015,'screenshot of Google Sheets spreadsheet with total number of exemptions and belief exemptions over time from 2000 and 2015'](/ExemptionTime.png)
