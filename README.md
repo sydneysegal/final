@@ -90,7 +90,7 @@
 8. **_93.21% of private school kindergartners in California who were exempt from their vaccinations between the 2000 and 2015 school years had "personal belief exemptions"; 91.38% of exempted public school kindergartners were exempt based on beliefs"_**
     1. ![Vaccination Exemptions by School Type,'summary statistics of vaccination exemptions in public and private schools in California from 2000 to 2015'](/SchoolType.png)
 
-### List the 5 counties (of the schools) with the highest exemption rates during the 2013-2014 and 2014-2015 school years.
+### List the 5 counties (of the schools) with the highest exemption rates during the 2013-2014, 2014-2015, and 2015-2016 school years.
 1. Use StudentData.csv in Google Sheets
 2. Insert a new column to the right of column J (becomes the new column K), titled "Exempted Sum"
     1. In the first cell of column K (K2), write the formula =SUM(I2:J2) to take the sum of students exempt from vaccinations for belief *and* medical reasons, then double-click the square in the bottom of the cell to copy the formula down the length of the column 
@@ -99,10 +99,10 @@
     2. Double-click the square in the bottom of the cell to copy the formula down the length of the column, changing for each row (i.e., =K3/E3 for row 3)
     3. The formula will produce decimals; re-format the numbers as percentages for easier analysis
 4. Sort column L ("Exemption Rate") from Z to A so that the highest exemption rate is at the top
-5. Add a filter to column M ("year") and select only 2013 and 2014 (so that the spreadsheet only shows data from those two school years)
-6. **_Riverside (100% exemption at Applied Scholastics Academy in 2013), Sacramento (92.86% at Grace Family Christian School in 2014), Los Angeles (88.24% at The City School in 2013 and 86.67% at Maple Village Waldorf School in 2013), Alameda (86.96% at Berkeley Rose School in 2014), El Dorado (84.21% at Cedar Springs Waldorf School in 2014_**
+5. Add a filter to column M ("year") and select only 2013, 2014, and 2015 (so that the spreadsheet only shows data from those three school years)
+6. **_Riverside (100% exemption at Applied Scholastics Academy in 2013), Sacramento (92.86% at Grace Family Christian School in 2014 and 91.67% in 2015), Los Angeles (88.24% at The City School in 2013 and 86.67% at Maple Village Waldorf School in 2013), Alameda (86.96% at Berkeley Rose School in 2014), El Dorado (84.21% at Cedar Springs Waldorf School in 2014_**
     1. NOTE: All of the exemptions in question were based on beliefs/not for medical reasons, and all of the schools were private with 20 students or less
-    2. ![Top 5 California Counties with the Highest Exemption Rates at Schools in 2013 and 2014,'5 counties of the schools with the highest exemption rates during the 2013-2014 and 2014-2015 school years'](/5Counties.png)
+    2. ![Top 5 California Counties with the Highest Exemption Rates at Schools from 2013 and 2015 school years,'5 counties of the schools with the highest exemption rates during the 2013-2014 and 2015-2016 school years']()
 
 ### How did the total number of California kindergarten students with vaccine exemptions change over time, from 2000 to 2015? Personal belief exemptions?
 1. Use StudentData.csv in Google Sheets
