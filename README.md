@@ -34,11 +34,11 @@
 
 ### #2: What percentage of California kindergartners were fully vaccinated in MMR, DTP, and Polio in the 2000-2001 versus 2015-2016 school year? How did this number change over time?
 1. Use the [StudentData](/StudentData3.xlsx) dataset
-2. Create a pivot table from the *entire* data set
+2. Create a pivot table from the *entire* data set to summarize how many students received each vaccine in 2000 vs. 2015
     1. Add "year" to the "Rows" section of the pivot table settings, organized in "ascending order"
     2. Add "n," "nMMR," "nDTP," and "nPolio" to the "Values" section of the pivot table settings, making sure that they are being summarized by "SUM"
     3. Add "year" to the "Filters" section of the pivot table settings and select just 2000 and 2015
-3. Copy just the numbers (including years) from the pivot table into a new sheet (copying the column headers will replicate the entire pivot table)
+3. Copy just the numbers (including years) from the pivot table into a new sheet (copying the column headers will replicate the entire pivot table) to do more non-pivot table analysis
     1. Write the titles from the pivot table in row 1 of the new sheet ("Year," "n," "nMMR," "nDTP," "nPolio")
 4. Although it may not be the same students that are getting each vaccination, it is likely that they are required to have certain vaccinations to be in school and that there is a crossover. For the purpose of this question, I am assuming that the lowest sum in each row is *approximately* how many kindergartners are fully vaccinated against MMR, DTP, *and* Polio. 
     1. Add a new column for "Percent Full" (percent of kindergartners who are fully vaccinated)
@@ -81,10 +81,10 @@
 
 ### #5: Between the 2000-2001 and 2015-2016 school years, were more California kindergartners exempt from vaccinations in public or private schools? What percentage of kindergartners in each school type were exempt based on beliefs vs. medical reasons?
 1. Use the [StudentData](/StudentData3.xlsx) dataset
-2. Create a pivot table from the *entire* data set
+2. Create a pivot table from the *entire* data set to summarize how many students had what type of vaccine exemption in public vs. private schools
     1. Add "schoolType" to the "Rows" section of the pivot table settings, organized in "ascending order"
     2. Add "n," "nPBE," and "nPME" to the "Values" section of the pivot table settings, making sure that they are summarized by "SUM"
-3. Create a new sheet
+3. Create a new sheet to do more non-pivot table analysis
     1. Copy and paste all of the white cells (everything but the column headers) from the pivot table into this new sheet, leaving room for new headers
     2. Write the titles for the old headers in the new sheet (school type, n, nPBE, nPME)
 4. Insert a column to the right of "nPME" (in the new sheet) called "Sum Exempt"
@@ -124,12 +124,12 @@
 
 ### #7: How did the total number of California kindergarten students with vaccine exemptions change over time, from the 2000-2001 to 2015-2016 school years? Personal belief exemptions?
 1. Use the [StudentData](/StudentData3.xlsx) dataset
-2. Create a pivot table from the *entire* dataset
+2. Create a pivot table from the *entire* dataset to summarize how many kindergarten students overall had vaccine exemptions in 2000 vs. 2015
     1. Add "year" to the "Rows" section of the pivot table settings, organized in "ascending order"
     2. Add "year" to the "Filters" section of the pivot table settings and select only 2000 and 2015
     3. Add "n," "Exempted Sum," and "nPBE" to the "Values" section of the pivot table settings, making sure that they are summarized by "SUM"
 3. Create a new row below the pivot table titled "Percent Change"
-    1. Use the following formula to calculate the percent change in the total number of exemptions and number of personal belief exemptions from the 2000-2001 school year to the 2015-2016 school year: =(NEW-OLD)/OLD
+    1. Use the following formula to calculate the percent change in the total number of exemptions and number of personal belief exemptions from the 2000-2001 school year to the 2015-2016 school year (included in the pivot table): =(NEW-OLD)/OLD
         1. Ex. In cell C6, type "=(C3-C2)/C2)" or "=(13679-4390)/4390" then press enter
         2. Ex. In cell D6, type "=(D3-D2)/D2)" or "=(12763-3819)/3819" then press enter
     2. Change the decimals calculated into percentages
@@ -138,24 +138,24 @@
 
 ### #8: How did the total number of vaccine exemptions for California kindergarten students change from the 2013-2014 to 2015-2016 school years?
 1. Use the [StudentData](/StudentData3.xlsx) dataset
-2. Copy the pivot table created for question #7 above 
+2. Copy the pivot table created for question #7 above to continue analysis about percent change in total vaccine exemption
     1. Keep "year" in the "Rows" section of the pivot table settings, organized in "ascending order"
     2. Keep "year" to the "Filters" section of the pivot table settings but select *2013* and 2015
     3. Add "n" and "Exempted Sum" to the "Values" section of the pivot table settings, making sure that they are summarized by "SUM"
-3. Keep the "Percent Change" row below the pivot table (from question #7 above)
+3. Keep the "Percent Change" row below the pivot table (also from question #7 above)
     1. With the formula already entered from the previous question (#7), the percent change should automatically change
         1. Make sure that the formula reads =(NEW-OLD)/OLD so that the number of exemptions in 2013 is subtracted from those in 2015 and all divided by the number of exemptions in 2013
             Ex. =(C3-C2)/C2
-4. **_From 2013 to 2016, the total number of vaccine exemptions decreased by 21.38%_**
+4. **_From the 2013-2014 to the 2015-2016 school year, the total number of vaccine exemptions decreased by 21.38%_**
     1. ![Percent change in the number of vaccine exemptions from the 2013-2014 to the 2015-2016 school year,'screenshot of Google Sheets spreadsheet with total number of exemptions from 2013 to 2016'](/ExemptChange.png)
 
 ### #9: From the 2013-2014 to 2015-2016 school year, what percentage of kindergartners in each county had vaccine exemptions? What was the percentage breakdown in each county between personal belief exemptions (PBEs) vs. permanent medical exemptions (PMEs)?
 1. Use the [StudentData](/StudentData3.xlsx) dataset
-2. Create a pivot table from the *entire* dataset
+2. Create a pivot table from the *entire* dataset to summarize vaccine exemption numbers by county
     1. Add "COUNTY" to the "Rows" section of the pivot table settings, organized in "ascending order"
     2. Add "year" to the "Filters" section of the pivot table settings and only select 2013, 2014, and 2015
     3. Add "Exempted Sum" and "n" to the "Values" section of the pivot table settings, making sure that they are summarized by "SUM"
-3. Copy the values/non-heading cells into a new sheet
+3. Copy the values/non-heading cells into a new sheet to do more non-pivot table analysis
     1. Write the titles for the old headers in the new sheet ("County," "Exempted Sum," "n")
 4. Create a new column called "Percent Exempt 2013-16" in the new sheet
     1. In the first cell of the new column, divide the "Exempted Sum" by the "n" in that first row to find the percent of total kindergarten students in the first county who have a vaccine exemption
@@ -166,25 +166,25 @@
     1. NOTE: This question/answer were used in my choropleth map by copying the "Percent Exempt" column into DataWrapper as my "Values" column 
     2. **_The county with the highest overall exemption rate from 2013 to 2016 was Nevada County (20.04%); the county with the lowest overall exemption rate was Sierra County (0%). The average rate of vaccine exemption for California kindergarten students was 4.94%_**
         1. I found these figures by first freezing the top row, then sorting the "Percent Exempt" column in Google Sheets from Z-->A, and then adding a row below the table for "Mean" to calculate the average of the percentages for all 58 counties
-6. Create a new pivot table from the dataset
+6. Create a new pivot table from the dataset to summarize PBE vs. PME numbers by county
     1. Add "COUNTY" to the "Rows" section of the pivot table settings, organized in "ascending order"
     2. Add "year" to the "Filters" section of the pivot table settings and only select 2013, 2014, and 2015
     3. Add "nPBE," "nPME," "n" to the "Values" section of the pivot table settings, making sure that they are summarized by "SUM"
-7. Copy the values/non-heading cells into a new sheet
+7. Copy the values/non-heading cells into a new sheet to do more non-pivot table analysis
     1. Write the titles for the old headers in the new sheet ("County," "n," "nPBE," and "nPME")
 8. Create two new columns called "Percent PBE" and "Percent PME" in the new sheet
     1. In the first cell of the "Percent PBE" column, divide the "nPBE" by the "n" in that first row to find the percent of total kindergarten students in the first county who have a personal belief vaccine exemption
     2. In the first cell of the "Percent PME" column, divide the "nPME" by the "n" in that first row to find the percent of total kindergarten students in the first county who have a personal belief vaccine exemption
-    4. Drag the square in the bottom right of these first cells down to the last county to copy the formula
+    3. Drag the square in the bottom right of these first cells down to the last county to copy the formula
         1. Check to ensure that the formula changes for each row (ex. =C3/B3 for row 3 and =C4/B4 for row 4, etc.)
-    5. Change the decimals calculated into percentages
+    4. Change the decimals calculated into percentages
 9. ![Kindergartners with Vaccine Exemptions in each county between 2013 and 2016,'screenshot of Google Sheets spreadsheet with total percentage of exemptions from 2013 to 2016'](/MapTooltips.png)
     1. NOTE: This question/answer were used in the tooltips of my choropleth map by copying the "Percent PBE" and "Percent PME" columns into DataWrapper as columns C and D (next to the "Values" column)
     2. **_The highest and lowest personal belief exemption rates occurred in the same counties which had the highest overall exemptions rates (Nevada and Sierra, respectively); the highest medical exemption rate was 0.63% in Plumas County, while the mode PME rate was 0%_**
         1.  I found these figures by first freezing the top row, then sorting the "Percent PBE" and "Percent PME" columns in Google Sheets from Z-->A
 
 ### #10: How many California counties had vaccine exemption rates that were higher than the state average, from the 2013-2014 to 2015-2016 school year? How many of these above-average counties are in Northern California?
-1. Using the table created and the mean vaccine exemption rate (4.94%) found in part 1 of question set #9 above, sort the "Percent Exempt 2013-16" column from Z-->A and count how many counties had a value higher than 4.94%
+1. Using the table created and the mean vaccine exemption rate (4.94%) found in part 1 of question set #9 above, sort the "Percent Exempt 2013-16" column from Z-->A to be able to count how many counties had an exemption rate higher than 4.94%
     2. **_23 out of 58 (39.65%) of California counties had overall vaccine exemption rates that were higher than the state average, between 2013 and 2016_**
 2. Create a new column called "Northern CA"
     1. Look up each county to determine where it's located and write "TRUE" if it's in the northern half of California (even with the Bay Area or above)
