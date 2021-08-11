@@ -1,7 +1,7 @@
 # J124 Final Project: *California Kindergarten Immunization Records*
 
 ## Story Summary and Sourcing
-2014 and 2015 were big years for disease outbreaks in California, especially among children, between a [measles outbreak](https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6406a5.htm) linked to visits to Disneyland theme parks and a [pertussis “epidemic”](https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6348a2.htm). However, since 2000, the rate of vaccine exemption has increased more than two-fold (211.59%). Not only have many parents been [hesitant](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6515949/) to vaccinate their children in recent years, with beliefs that vaccines could cause autism or overwhelm young immune systems, but nonmedical exemptions actually tripled after California banned personal belief exemptions (PBEs) in [2015](https://www.aafp.org/news/health-of-the-public/20181127califvaccstudy.html) in an attempt to increase vaccination rates. Ultimately, this is all to say that many families have objected to vaccinating their children at key moments in public health history –– and especially in Northern California counties (as shown in the data visualization below). While the number of exemptions did decrease slightly during the years in question (21% from 2013 to the end of 2016), **it would be valuable to investigate why there might be a *geographic trend* in vaccine refusal or exemptions**. For example, the higher exemption rates in one area could suggest that there is some sort of urban/rural divide, being higher in smaller and less urban counties. Additionally, the top 7 schools with the highest exemption rates are from within these areas (i.e., Sacramento County is in the northern part of the state). These schools are not necessarily representative of all of Northern California, though they show how vaccination may be linked to values; each school is private, with 20 or fewer students, one school is online, one is religious and made the list twice, etc. 95% of children at a school must be vaccinated to prevent measles transmission, throughout a school or an entire state, but with exemption rates as high as 92.86% from 2013 to the end of 2016 (excluding the online school’s rate of 100%), outbreaks remain possible.
+2014 and 2015 were big years for disease outbreaks in California, especially among children, between a [measles outbreak](https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6406a5.htm) linked to visits to Disneyland theme parks and a [pertussis “epidemic”](https://www.cdc.gov/mmwr/preview/mmwrhtml/mm6348a2.htm). However, since 2000, the rate of vaccine exemption has increased more than two-fold (211.59%). Not only have many parents been [hesitant](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6515949/) to vaccinate their children in recent years, with beliefs that vaccines could cause autism or overwhelm young immune systems, but permanent medical exemptions (PMEs) actually tripled by 2018 after California banned personal belief exemptions (PBEs) in [2015](https://www.aafp.org/news/health-of-the-public/20181127califvaccstudy.html) in an attempt to increase vaccination rates. Ultimately, this is all to say that many families have objected to vaccinating their children at key moments in public health history –– and especially in Northern California counties (as shown in the data visualization below). While the number of exemptions did decrease slightly during the years in question (21% from 2013 to the end of 2016), **it would be valuable to investigate why there might be a *geographic trend* in vaccine refusal or exemptions**. For example, the higher exemption rates in one area could suggest that there is some sort of urban/rural divide, being higher in smaller and less urban counties. Additionally, the top 7 schools with the highest exemption rates are from within these areas (i.e., Sacramento County is in the northern part of the state). These schools are not necessarily representative of all of Northern California, though they show how vaccination may be linked to values; each school is private, with 20 or fewer students, one school is online, one is religious and made the list twice, etc. 95% of children at a school must be vaccinated to prevent measles transmission, throughout a school or an entire state, but with exemption rates as high as 92.86% from 2013 to the end of 2016 (excluding the online school’s rate of 100%), outbreaks remain possible.
 
 | Human Source | Contact Information | Why? | 
 | ----------- | ----------- | ----------- |
@@ -15,13 +15,13 @@
 | [“Kindergartners with All Required Immunizations"](/Kidsdata-All-Required.csv) from 2013-2019, organized by KidsData.org | Since the StudentData dataset does not include how many students were fully immunized, the KidsData dataset fills in this gap. For example, some parents might choose not to exempt their children from every immunization (or some lower-income communities might not have had access to all necessary vaccines), but the original dataset doesn't make this distinction. The KidsData.org [webpage](https://www.kidsdata.org/topic/292/immunizations-kindergarteners/map#loct=3&fmt=63&tf=84&center=-13325098.893387,4509031.392449&zoom=1) also presents the data in a choropleth map which shows how Northern California has had lower vaccination rates over time, complementing what I found about the region's high exemption rates. However, there is a discrepancy between the schools/school districts listed in each of these datasets (i.e., the Larkspur-Corte Madera School District does not have its elementary schools listed in the StudentData dataset), so I would make sure to note that in my story. |
 
 ## Data Visualization 
-[![Percentage of kindergartners exempt from vaccination in each California county, 2013 to 2015 school years,'The data is presented on a choropleth map of California, with a range of light to dark colors for low to high exemption rates in each county'](/DataViz.png)](https://datawrapper.dwcdn.net/NzQ3v/1/)
+[![Percentage of kindergartners exempt from vaccination in each California county, 2013 to 2015 school years,'The data is presented on a choropleth map of California, with a range of light to dark colors for low to high exemption rates in each county'](/DataViz2.png)](https://datawrapper.dwcdn.net/NzQ3v/3/)
 
 ## Data Analysis Process
 
 *First, I downloaded the "StudentData.csv," "InfantData.csv" and "pertusisRates2010_2015.csv" files from [Kaggle](https://www.kaggle.com/broach/california-kindergarten-immunization-rates/version/5?select=StudentData.csv) and uploaded them to Google Sheets to perform the following analyses. Each question below outlines the steps I took to answer it, with the final version of the dataset being used marked/linked in each step #1. Before beginning the questions, I made sure to "freeze" the top row of columns ("View" tab, then "Freeze," then "1 row"). The questions also build off of one another, so certain steps taken in one question may provide information referred to in the next.*
 
-### How many California kindergartners got each vaccine each school year?
+### #1: How many California kindergartners got each vaccine each school year?
 1. Use the [StudentData](/StudentData.xlsx) dataset in Google Sheets 
 2. Create a pivot table from the *entire* data set to summarize how many students got each vaccine per year
     1. Add "year" to the "Rows" section of the pivot table settings and select "ascending order"
@@ -32,7 +32,7 @@
         1. ![Breakdown of vaccinations by year,'total number of kindergartner MMR DTP and Polio vaccinations by year'](/YearBreakdown.png)
         2. **_Most notable from the answers above is that the highest number of students were vaccinated against MMR, DTP, and Polio in 2015 (517k, 516k, and 518k, respectively); the second-highest number of students for all three vaccinations occurred in 2000 (497k, 497k, and 500k), the first school year that the data was recorded_**
 
-### What percentage of California kindergartners were fully vaccinated in MMR, DTP, and Polio in 2000 versus 2015? How did this number change over time?
+### #2: What percentage of California kindergartners were fully vaccinated in MMR, DTP, and Polio in 2000 versus 2015? How did this number change over time?
 1. Use the [StudentData](/StudentData.xlsx) dataset in Google Sheets
 2. Create a pivot table from the *entire* data set
     1. Add "year" to the "Rows" section of the pivot table settings and select "ascending order"
@@ -52,7 +52,7 @@
 7. **_The approximate number of fully vaccinated California kindergartners increased by 3.72% from the 2000 to 2015 school year_**
     1. ![Approximate Number of Fully Vaccinated CA Kindergartners from 2000 to 2015,'Google Sheets table of vaccination breakdown for California kindergartners in 2000 and 2015 with percent fully vaccinated based on lowest number for individual vaccines'](/FullVax.png)
 
-### Which California county had the most infant Pertussis cases in 2014? Highest case rate? Highest death rate?
+### #3: Which California county had the most infant Pertussis cases in 2014? Highest case rate? Highest death rate?
 1. Use the [InfantData](/InfantData.csv) dataset in Google Sheets
 2. Sort "Cases" column from Z-->A to organize the counties with the most infant Pertussis cases at the top
 3. **_Los Angeles had 143 Pertussis cases in 2014, only 1 of which died_**
@@ -71,7 +71,7 @@
 10. **_Placer County had the highest infant death rate of 33.33% in 2014 (1 in 3 cases died); only 4 counties had any deaths (1 each for Santa Barbara, Joaquin, and Los Angeles too)_**
     1. ![Infant Death Rate by Pertussis in 2014 in the Top 5 California Counties,'Google Sheets table of the top 5 California counties with the highest death rates of infants with pertussis in 2014'](/InfantDeath.png)
 
-### Which California county had the highest rate of Pertussis cases in 2014? How does this county compare to the county with the most infant Pertussis cases in 2014 (found above)?
+### #4: Which California county had the highest rate of Pertussis cases in 2014? How does this county compare to the county with the most infant Pertussis cases in 2014 (found above)?
 1. Use the [pertusisRates2010_2015](/pertusisRates2010_2015) dataset in Google Sheets
 2. Freeze the first column of the sheet so that the county names stay in place when scrolling to distant columns/cases and rates can be easily compared against the counties
 3. Sort the "Rate 2014" column from Z-->A to reveal the highest rates at the top of the spreadsheet
@@ -79,7 +79,7 @@
     1. **_Comparing just the Los Angeles figures, Los Angeles County had 10 times as many Pertussis cases in infants than they did the whole population in 2014 (2.1 cases per 1,000 infants is equivalent to 210 cases per 100,000 infants)_**
     2. ![California County with Most Pertussis cases versus Los Angeles in 2014,'Sonoma County had the highest rate of Pertussis cases in 2014 at 142.18 per 100k people and Los Angeles had only 20.25 per 100k people'](/PertussisRates.png)
 
-### Between the 2000 and 2015 school years, were more California kindergartners exempt from vaccinations in public or private schools? What percentage of kindergartners in each school type were exempt based on beliefs vs. medical reasons?
+### #5: Between the 2000 and 2015 school years, were more California kindergartners exempt from vaccinations in public or private schools? What percentage of kindergartners in each school type were exempt based on beliefs vs. medical reasons?
 1. Use the [StudentData](/StudentData.xlsx) dataset in Google Sheets
 2. Create a pivot table from the *entire* data set
     1. Add "schoolType" to the "Rows" section of the pivot table settings and select "ascending order"
@@ -95,13 +95,13 @@
     2. In cell F3, divide the contents of cell E3 by B3 for the percent of kindergartners with exemptions in public schools (=E3/B3, then press enter)
     3. Format the decimals as percentages
 6. **_3.23% of total private school kindergartners were exempt from vaccinations from the 2000 to 2015 school years; 1.81% of total public school kindergartners were exempt from vaccinations_**
-7. Insert a new column to the right of "Percent Exempt" titled "Percent Belief" (column G)
-    1. In cell G2, divide the contents of cell C2 by E2 (number of private school kindergartners exempt for beliefs by the total number of private school kindergartners exempt)
-    2. In cell G3, divide the contents of cell C3 by E3 (number of public school kindergartners exempt for beliefs by the total number of public school kindergartners exempt)
+7. Insert a new column called "Percent Belief"
+    1. Divide the number of private school kindergartners exempt for beliefs by the total number of private school kindergartners exempt
+    2. Divide the number of public school kindergartners exempt for beliefs by the total number of public school kindergartners exempt
 8. **_93.21% of private school kindergartners in California who were exempt from their vaccinations between the 2000 and 2015 school years had "personal belief exemptions"; 91.38% of exempted public school kindergartners were exempt based on beliefs"_**
     1. ![Vaccination Exemptions by School Type,'summary statistics of vaccination exemptions in public and private schools in California from 2000 to 2015'](/SchoolType.png)
 
-### List the 5 counties (of the schools) with the highest exemption rates during the 2013-2014, 2014-2015, and 2015-2016 school years.
+### #6: List the 5 counties (of the schools) with the highest exemption rates during the 2013-2014, 2014-2015, and 2015-2016 school years.
 1. Use the [StudentData](/StudentData.xlsx) dataset in Google Sheets
 2. Insert a new column to the right of column J (becomes the new column K), titled "Exempted Sum"
     1. In the first cell of column K (K2), write the formula =SUM(I2:J2) to take the sum of students exempt from vaccinations for belief *and* medical reasons, then double-click the square in the bottom of the cell to copy the formula down the length of the column 
@@ -117,7 +117,7 @@
         1. As shown in the table above, the same school in Sacramento County had the highest exemption rate in both 2014 and 2015, though the percentage decreased by 1.19%
         2. The next 5 counties with the schools with the highest exemption rates (not shown in the table or asked about in the question) are Sutter, Nevada, Orange, Mendocino, and Marin (4/5 of which are in Northern California, like Sacramento, Alameda, and El Dorado)
 
-### How did the total number of California kindergarten students with vaccine exemptions change over time, from 2000 to 2015? Personal belief exemptions?
+### #7: How did the total number of California kindergarten students with vaccine exemptions change over time, from 2000 to 2015? Personal belief exemptions?
 1. Use the [StudentData](/StudentData.xlsx) dataset in Google Sheets
 2. Create a pivot table from the *entire* data set
     1. Add "year" to the "Rows" section of the pivot table settings and select "ascending order"
@@ -130,3 +130,5 @@
     2. Change the decimals calculated into percentages
 4. **_From the 2000-2001 school year to the 2015-2016 school year, the total number of vaccination exemptions increased by 211.59%; the total number of personal belief exemptions increased by 234.2%_**
     1. ![Total Number of Students with Vaccine Exemptions 2000 versus 2015,'screenshot of Google Sheets spreadsheet with total number of exemptions and belief exemptions over time from 2000 and 2015'](/ExemptChange.png)
+
+### #8: From the 2013-2014 to 2015-2016 school year, what percentage of kindergartners in each county had vaccine exemptions? What was the percent breakdown in each county between personal belief exemptions (PBEs) vs. permanent medical exemption
