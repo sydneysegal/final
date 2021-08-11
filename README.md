@@ -22,7 +22,7 @@
 *First, I downloaded the "StudentData.csv," "InfantData.csv" and "pertusisRates2010_2015.csv" files from [Kaggle](https://www.kaggle.com/broach/california-kindergarten-immunization-rates/version/5?select=StudentData.csv) and uploaded them to Google Sheets to perform the following analyses. I did not clean any of these sheets beforehand but paid attention for anomalies as I went. Each question below outlines the steps I took to answer it, with the final version of the dataset being used marked/linked in each step 1. Before beginning the questions, I made sure to "freeze" the top row of columns ("View" tab, then "Freeze," then "1 row"). The questions also build off of one another, so certain steps taken in one question may provide information referred to in the next.*
 
 ### #1: How many California kindergartners got each vaccine each school year?
-1. Use the [StudentData](/StudentData2.xlsx) dataset in Google Sheets 
+1. Use the [StudentData](/StudentData3.xlsx) dataset
 2. Create a pivot table from the *entire* data set to summarize how many students got each vaccine per year
     1. Add "year" to the "Rows" section of the pivot table settings, organized in "ascending order"
     2. Add "nMMR," "nDTP," and "nPolio" to the "Values" section of the pivot table settings, making sure that they are being summarized by "SUM"
@@ -33,7 +33,7 @@
         2. **_Most notable from the answers above is that the highest number of students were vaccinated against MMR, DTP, and Polio in 2015 (517k, 516k, and 518k, respectively); the second-highest number of students for all three vaccinations occurred in 2000 (497k, 497k, and 500k), the first school year that the data was recorded_**
 
 ### #2: What percentage of California kindergartners were fully vaccinated in MMR, DTP, and Polio in the 2000-2001 versus 2015-2016 school year? How did this number change over time?
-1. Use the [StudentData](/StudentData2.xlsx) dataset in Google Sheets
+1. Use the [StudentData](/StudentData3.xlsx) dataset
 2. Create a pivot table from the *entire* data set
     1. Add "year" to the "Rows" section of the pivot table settings, organized in "ascending order"
     2. Add "n," "nMMR," "nDTP," and "nPolio" to the "Values" section of the pivot table settings, making sure that they are being summarized by "SUM"
@@ -53,7 +53,7 @@
     1. ![Approximate Number of Fully Vaccinated CA Kindergartners from 2000 to 2015,'Google Sheets table of vaccination breakdown for California kindergartners in 2000 and 2015 with percent fully vaccinated based on lowest number for individual vaccines'](/FullVax.png)
 
 ### #3: Which California county had the most infant Pertussis cases in 2014? Highest case rate? Highest death rate?
-1. Use the [InfantData](/InfantData.csv) dataset in Google Sheets
+1. Use the [InfantData](/InfantData.csv) dataset
 2. Sort "Cases" column from Z-->A to organize the counties with the most infant Pertussis cases at the top
 3. **_Los Angeles had 143 Pertussis cases in 2014, only 1 of which died_**
     1. ![Top 5 California Counties With Most Infant Pertussis Cases in 2014,'Los Angeles County had the most pertussis cases in infants in 2014](/InfantCases.png)
@@ -72,7 +72,7 @@
     1. ![Infant Death Rate by Pertussis in 2014 in the Top 5 California Counties,'Google Sheets table of the top 5 California counties with the highest death rates of infants with pertussis in 2014'](/InfantDeath.png)
 
 ### #4: Which California county had the highest rate of Pertussis cases in 2014? How does this county compare to the county with the most infant Pertussis cases in 2014 (found above)?
-1. Use the [pertusisRates2010_2015](/pertusisRates2010_2015) dataset in Google Sheets
+1. Use the [pertusisRates2010_2015](/pertusisRates2010_2015) dataset
 2. Freeze the first column of the sheet so that the county names stay in place when scrolling to other column (so that cases/rates can be easily compared against the counties)
 3. Sort the "Rate 2014" column from Z-->A to reveal the highest rates at the top of the spreadsheet
 4. **_Sonoma County had the highest rate of Pertussis cases in 2014 (142.18 per 100,000 people); although Los Angeles had the most infant Pertussis cases in 2014 (2.1 per 1,000 infants according to Kaggle and included in the table above), the county only had 20.25 cases per 100,000 people in 2014_**
@@ -80,7 +80,7 @@
     2. ![California County with Most Pertussis cases versus Los Angeles in 2014,'Sonoma County had the highest rate of Pertussis cases in 2014 at 142.18 per 100k people and Los Angeles had only 20.25 per 100k people'](/PertussisRates.png)
 
 ### #5: Between the 2000-2001 and 2015-2016 school years, were more California kindergartners exempt from vaccinations in public or private schools? What percentage of kindergartners in each school type were exempt based on beliefs vs. medical reasons?
-1. Use the [StudentData](/StudentData2.xlsx) dataset in Google Sheets
+1. Use the [StudentData](/StudentData3.xlsx) dataset
 2. Create a pivot table from the *entire* data set
     1. Add "schoolType" to the "Rows" section of the pivot table settings, organized in "ascending order"
     2. Add "n," "nPBE," and "nPME" to the "Values" section of the pivot table settings, making sure that they are summarized by "SUM"
@@ -105,7 +105,7 @@
     1. ![Vaccination Exemptions by School Type,'summary statistics of vaccination exemptions in public and private schools in California from 2000 to 2016'](/SchoolType.png)
 
 ### #6: List the 5 counties (of the schools) with the highest exemption rates during the 2013-2014, 2014-2015, and 2015-2016 school years.
-1. Use the [StudentData](/StudentData2.xlsx) dataset in Google Sheets
+1. Use the [StudentData](/StudentData3.xlsx) dataset
 2. Insert a new column in the main sheet called "Exempted Sum"
     1. In the first cell of the new column, take the sum of students exempt from vaccinations for belief *and* medical reasons, then double-click the square in the bottom of the cell to copy the formula down the length of the column
         1. Ex. =SUM(I2:J2)
@@ -123,7 +123,7 @@
         2. The next 5 counties with the schools with the highest exemption rates (not shown in the table or asked about in the question) are Sutter, Nevada, Orange, Mendocino, and Marin (4/5 of which are in Northern California, like Sacramento, Alameda, and El Dorado)
 
 ### #7: How did the total number of California kindergarten students with vaccine exemptions change over time, from the 2000-2001 to 2015-2016 school years? Personal belief exemptions?
-1. Use the [StudentData](/StudentData2.xlsx) dataset in Google Sheets
+1. Use the [StudentData](/StudentData3.xlsx) dataset
 2. Create a pivot table from the *entire* dataset
     1. Add "year" to the "Rows" section of the pivot table settings, organized in "ascending order"
     2. Add "year" to the "Filters" section of the pivot table settings and select only 2000 and 2015
@@ -137,7 +137,7 @@
     1. ![Total Number of Students with Vaccine Exemptions in the 2000-2001 versus the 2015-2016 school years,'screenshot of Google Sheets spreadsheet with total number of exemptions and belief exemptions over time from the 2000-2001 to 2015-2016 school years'](/Question7.png)
 
 ### #8: How did the total number of vaccine exemptions for California kindergarten students change from the 2013-2014 to 2015-2016 school years?
-1. Use the [StudentData](/StudentData2.xlsx) dataset in Google Sheets
+1. Use the [StudentData](/StudentData3.xlsx) dataset
 2. Copy the pivot table created for question #7 above 
     1. Keep "year" in the "Rows" section of the pivot table settings, organized in "ascending order"
     2. Keep "year" to the "Filters" section of the pivot table settings but select *2013* and 2015
@@ -149,8 +149,8 @@
 4. **_From 2013 to 2016, the total number of vaccine exemptions decreased by 21.38%_**
     1. ![Percent change in the number of vaccine exemptions from the 2013-2014 to the 2015-2016 school year,'screenshot of Google Sheets spreadsheet with total number of exemptions from 2013 to 2016'](/ExemptChange.png)
 
-### #9: From the 2013-2014 to 2015-2016 school year, what percentage of kindergartners in each county had vaccine exemptions? What was the percent breakdown in each county between personal belief exemptions (PBEs) vs. permanent medical exemptions (PMEs)?
-1. Use the [StudentData](/StudentData2.xlsx) dataset in Google Sheets
+### #9: From the 2013-2014 to 2015-2016 school year, what percentage of kindergartners in each county had vaccine exemptions? What was the percentage breakdown in each county between personal belief exemptions (PBEs) vs. permanent medical exemptions (PMEs)?
+1. Use the [StudentData](/StudentData3.xlsx) dataset
 2. Create a pivot table from the *entire* dataset
     1. Add "COUNTY" to the "Rows" section of the pivot table settings, organized in "ascending order"
     2. Add "year" to the "Filters" section of the pivot table settings and only select 2013, 2014, and 2015
@@ -162,7 +162,7 @@
     2. Drag the square in the bottom right of the cell down to the last county to copy the formula
         1. Check to ensure that the formula changes for each row (ex. =B3/C3 for row 3, =B4/C4 for row 4, etc.)
     3. Change the decimals calculated into percentages
-5. ![Kindergartners with personal belief and medical exemptions in each county between 2013 and 2016,'screenshot of Google Sheets spreadsheet with breakdown of exemption types from 2013 to 2016'](/MapQuestion.png)
+5. ![Kindergartners with personal belief and medical exemptions in each county between 2013 and 2016,'screenshot of Google Sheets spreadsheet with breakdown of exemption types from 2013 to 2016'](/MapShot.png)
     1. NOTE: This question/answer were used in my choropleth map by copying the "Percent Exempt" column into DataWrapper as my "Values" column 
     2. **_The county with the highest overall exemption rate from 2013 to 2016 was Nevada County (20.04%); the county with the lowest overall exemption rate was Sierra County (0%). The average rate of vaccine exemption for California kindergarten students was 4.94%_**
         1. I found these figures by first freezing the top row, then sorting the "Percent Exempt" column in Google Sheets from Z-->A, and then adding a row below the table for "Mean" to calculate the average of the percentages for all 58 counties
@@ -178,7 +178,7 @@
     4. Drag the square in the bottom right of these first cells down to the last county to copy the formula
         1. Check to ensure that the formula changes for each row (ex. =C3/B3 for row 3 and =C4/B4 for row 4, etc.)
     5. Change the decimals calculated into percentages
-9. ![Kindergartners with Vaccine Exemptions in each county between 2013 and 2016,'screenshot of Google Sheets spreadsheet with total percentage of exemptions from 2013 to 2016'](/Tooltips.png)
+9. ![Kindergartners with Vaccine Exemptions in each county between 2013 and 2016,'screenshot of Google Sheets spreadsheet with total percentage of exemptions from 2013 to 2016'](/MapTooltips.png)
     1. NOTE: This question/answer were used in the tooltips of my choropleth map by copying the "Percent PBE" and "Percent PME" columns into DataWrapper as columns C and D (next to the "Values" column)
     2. **_The highest and lowest personal belief exemption rates occurred in the same counties which had the highest overall exemptions rates (Nevada and Sierra, respectively); the highest medical exemption rate was 0.63% in Plumas County, while the mode PME rate was 0%_**
         1.  I found these figures by first freezing the top row, then sorting the "Percent PBE" and "Percent PME" columns in Google Sheets from Z-->A
@@ -189,4 +189,4 @@
 2. Create a new column called "Northern CA"
     1. Look up each county to determine where it's located and write "TRUE" if it's in the northern half of California (even with the Bay Area or above)
     2. **_Approximately 20 out of the 23 (86.95%) of California counties that have a vaccine exemption rate that is above average (above 4.94%) can be found in the top/northern half of California_**
-3. ![Number of counties in California with vaccine exemption rates above the state average between 2013 and 2016,'screenshot of Google Sheets spreadsheet with the counties in 2013-16 that had vaccine exemption rates that were above the state average and whether they're in the northern part of California'](/AboveAverage.png)
+3. ![Number of counties in California with vaccine exemption rates above the state average between 2013 and 2016,'screenshot of Google Sheets spreadsheet with the counties in 2013-16 that had vaccine exemption rates that were above the state average and whether they're in the northern part of California'](/TopCounties.png)
