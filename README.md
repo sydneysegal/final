@@ -19,7 +19,7 @@
 
 ## Data Analysis Process
 
-*First, I downloaded the "StudentData.csv," "InfantData.csv" and "pertusisRates2010_2015.csv" files from [Kaggle](https://www.kaggle.com/broach/california-kindergarten-immunization-rates/version/5?select=StudentData.csv) and uploaded them to Google Sheets to perform the following analyses. I did not clean any of these sheets beforehand but paid attention for anomalies as I went. Each question below outlines the steps I took to answer it, with the final version of the dataset being used marked/linked in each step 1. Before beginning the questions, I made sure to "freeze" the top row of columns ("View" tab, then "Freeze," then "1 row"). The questions also build off of one another, so certain steps taken in one question may provide information referred to in the next.*
+*First, I downloaded the "StudentData.csv," "InfantData.csv" and "pertusisRates2010_2015.csv" files from [Kaggle](https://www.kaggle.com/broach/california-kindergarten-immunization-rates/version/5?select=StudentData.csv) and uploaded them to Google Sheets to perform the following analyses. I did not clean any of these sheets beforehand but paid attention for anomalies as I went. Each question below outlines the steps I took to answer it, with the final version of the dataset being used marked/linked in each step 1. Before beginning the questions, I made sure to "freeze" the top row of columns. The questions also build off of one another, so certain steps taken in one question may provide information referred to in the next.*
 
 ### #1: How many California kindergartners got each vaccine each school year?
 1. Use the [StudentData](/StudentData3.xlsx) dataset
@@ -185,7 +185,7 @@
 
 ### #10: How many California counties had vaccine exemption rates that were higher than the state average, from the 2013-2014 to 2015-2016 school year? How many of these above-average counties are in Northern California?
 1. Using the table created and the mean vaccine exemption rate (4.94%) found in part 1 of question set #9 above, sort the "Percent Exempt 2013-16" column from Z-->A to be able to count how many counties had an exemption rate higher than 4.94%
-    2. **_23 out of 58 (39.65%) of California counties had overall vaccine exemption rates that were higher than the state average, between 2013 and 2016_**
+    1. **_23 out of 58 (39.65%) of California counties had overall vaccine exemption rates that were higher than the state average, between 2013 and 2016_**
 2. Create a new column called "Northern CA"
     1. Look up each county to determine where it's located and write "TRUE" if it's in the northern half of California (even with the Bay Area or above)
     2. **_Approximately 20 out of the 23 (86.95%) of California counties that have a vaccine exemption rate that is above average (above 4.94%) can be found in the top/northern half of California_**
